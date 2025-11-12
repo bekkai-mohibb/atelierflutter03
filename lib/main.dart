@@ -43,6 +43,38 @@ class MainApp extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black87),
               ),
+
+              
+              const SizedBox(height: 30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      print("Tu as cliqué sur Commencer.");
+                    },
+                    child: const Text('Commencer'),
+                  ),
+                  OutlinedButton(
+                    onPressed: () {
+                      print("Tu as cliqué sur En savoir plus.");
+                    },
+                    child: const Text('En savoir plus'),
+                  ),
+                ],
+              ),
+
+              
+              const SizedBox(height: 20),
+              TextButton(
+                onPressed: () {
+                  print("Tu as cliqué sur le TextButton !");
+                },
+                child: const Text(
+                  'Essayer TextButton',
+                  style: TextStyle(color: Colors.blueAccent),
+                ),
+              ),
             ],
           ),
         ),
